@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -13,6 +14,8 @@ public class Main {
         escolha += scan.nextLine();
         System.out.print("Digite seu número (0 a 10):");
         int jogada = scan.nextInt();
+        Random random = new Random();
+        int jogadaComputador = random.nextInt(0,10);
 
 
 
