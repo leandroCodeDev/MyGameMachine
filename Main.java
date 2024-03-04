@@ -14,12 +14,20 @@ public class Main {
         escolha += scan.nextLine();
         System.out.print("Digite seu número (0 a 10):");
         int jogada = scan.nextInt();
+
         Random random = new Random();
-        int jogadaComputador = random.nextInt(0,10);
+        int jogadaComputador = random.nextInt(0, 10);
 
+        int calculaJogada = jogadaComputador + jogada;
 
+        String resultado = calculaJogada % 2 == 0 ? "par" : "impar";
 
-
-
+        if(resultado.equalsIgnoreCase(escolha)){
+            System.out.println("Você ganhou!");
+        }else{
+            System.out.println("Você perdeu.");
+        }
     }
 }
+
+
