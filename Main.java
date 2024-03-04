@@ -22,11 +22,20 @@ public class Main {
 
         String resultado = calculaJogada % 2 == 0 ? "par" : "impar";
 
+        System.out.println("\n");
+        System.out.println("Número do jogador: "+jogada);
+        System.out.println("Número do computador: "+ jogadaComputador);
+        System.out.println("Soma: "+ calculaJogada);
+        System.out.println(resultado.toUpperCase()+" venceu!");
+        System.out.println("\n");
+
         if(resultado.equalsIgnoreCase(escolha)){
             System.out.println("Você ganhou!");
         }else{
             System.out.println("Você perdeu.");
         }
+
+
     }
 }
 
